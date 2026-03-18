@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+
+  "name": "No YT Shorts",
+  "version": "1.0",
+  "description": "Remove distractions from YouTube by hiding the Shorts section.",
+
+
+  "permissions": ["storage", "tabs"],
+
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["src/content/index.js"]
+    }
+  ],
+
+  "action": {
+    "default_popup": "src/popup/popup.html"
+  }
+}

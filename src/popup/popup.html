@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>No YT Shorts</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="header">
+        <div class="icon">🚫</div>
+        <div>
+          <h1>No YT Shorts</h1>
+          <p class="description">Remove YouTube Shorts from your feed</p>
+        </div>
+      </div>
+
+      <div class="toggle-section">
+        <label class="switch">
+          <input type="checkbox" id="toggle" />
+          <span class="slider"></span>
+        </label>
+        <span class="toggle-label">Block Shorts</span>
+      </div>
+
+      <p id="status">Loading...</p>
+
+      <div class="actions">
+        <button id="refresh" class="refresh-btn">Refresh Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
